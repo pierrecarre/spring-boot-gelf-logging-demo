@@ -9,5 +9,7 @@ Gelf appender logback configuration provided for import
         <host>udp:127.0.0.1</host>
         <port>12201</port>
         <version>1.1</version>
+        <additionalFields>ApplicationName=${SPRING_APPLICATION_NAME}</additionalFields>
+        <additionalFieldTypes>ApplicationName=String</additionalFieldTypes>
     </appender>
 </included>
